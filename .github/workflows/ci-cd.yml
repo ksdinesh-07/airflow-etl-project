@@ -25,12 +25,8 @@ jobs:
     
     - name: Check Python syntax
       run: |
-        python -m py_compile dags/etl_pipelines/*.py || true
+        python -m py_compile dags/etl_pipelines/*.py
     
     - name: Verify Airflow import
       run: |
         python -c "from airflow import DAG; print('✅ Airflow imported successfully')"
-    
-    - name: List DAG files
-      run: |
-        find dags/ -name "*.py" -type f
