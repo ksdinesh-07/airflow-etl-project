@@ -209,6 +209,7 @@ make setup
 
     Toggle ON
 
+<<<<<<< Updated upstream
     Click "Trigger DAG" button
 
 ### Monitoring & Logs
@@ -420,3 +421,17 @@ This Airflow ETL project provides a robust, scalable, and maintainable solution 
     Easy setup and deployment
 
 The project serves as both a practical ETL solution and a learning resource for understanding modern data pipeline patterns.
+=======
+#### **requirements.txt**
+```bash
+# requirements.txt 
+apache-airflow==2.10.5
+pandas==2.2.0
+pymysql==1.1.0
+sqlalchemy==2.0.25
+mysqlclient==2.2.0
+pytest==7.4.3
+black==23.12.0
+flake8==7.0.0
+python-dotenv==1.0.0
+>>>>>>> Stashed changes
